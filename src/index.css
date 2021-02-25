@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #dedede75;
+}
+
+.logScreen{
+  display: flex;
+  flex-direction: column;
+}
+
+.loginHeader{
+  width: 100vw;
+  height: 5vh;
+  min-height: 40px;
+  background: #0696bc;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+.loggedHeader{
+  height: 5vh;
+  min-height: 40px;
+  background: #0696bc;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.profileHeader{
+  height: 5vh;
+  min-height: 40px;
+  background: #0696bc;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.mobileHeaderBtn{
+  display: none;
+}
+
+.centerContentRegister{
+  display: flex;
+  justify-content: center;
+}
+
+.registerPage{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register{
+  width: 30vw;
+  min-width: 200px;
+  min-height: 50vh;
+}
+
+.centerContentLogin{
+  display: flex;
+  justify-content: center;
+}
+
+.loginPage{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login{
+  width: 30vw;
+  min-width: 200px;
+}
+
+.logoutBtn{
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.logoutBtn:hover{
+  text-decoration: none;
+  color: #e7e7e7;
+  text-shadow: 0 0 5px #00f8;
+}
+
+.dashboardScreen{
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardComponents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashProfile{
+  width: 20vw;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  position: fixed;
+}
+
+.dashProfileImgDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dashProfileImg{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.dashSettings{
+  width: 20vw;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  right: 3vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.userCardEmail{
+  font-size: 20px;
+}
+
+.columnSettings{
+  display: flex;
+  flex-direction: column;
+}
+
+.dashPost{
+  max-width: 50vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.postHeader{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2vh;
+}
+
+.postsContainer{
+  margin-bottom: 5vh;
+}
+
+.postUserImg{
+  height: 5vh;
+  min-height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.postImg{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #777;
+}
+
+.postBtns{
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #a8a8a8;
+  padding-top: 5px;
+  margin-top: 0;
+}
+
+.postSingleBtn{
+  min-width: 40px;
+  background: #fff;
+  color: #0696bc;
+  border: none;
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+  max-height: 30px;
+}
+
+.postSingleBtn:hover{
+  background: #0696bc;
+}
+
+.postStats{
+  display: flex;
+  gap: 1vw;
+  margin-top: 2vh;
+  text-align: center;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.postSingleStat{
+  color: #0696bc;
+  height: 10px;
+  min-width: 40px;
+}
+
+.profileScreen{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.userInfoHeader{
+  width: 100%;
+  height: 30vh;
+  min-height: 150px;
+}
+
+.profileBanner{
+  background: #0696bc;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profileBannerImg{
+  width: 100%;
+}
+
+.profileContactInfo{
+  background: #fff;
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.profileImg{
+  position: absolute;
+  margin-left: 3vw;
+  width: 10vw;
+  margin-top: -5%;
+}
+
+.profileNameBanner{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 22%;
+}
+
+.moreOptionsProfileBanner{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3vw;
+}
+
+.moreOptionsProfileBannerBtn{
+  cursor: pointer;
+}
+
+.profileContent{
+  display: flex;
+  gap: 1vw;
+  margin-top: -2vh;
+}
+
+.profilePosts{
+  max-width: 60vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.profileFriends{
+  width: 20%;
+  min-width: 150px;
+  max-height: 250px;
+  margin-top: 5vh;
+  border-radius: 5px;
+}
+
+.profileFriendsBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.friendBtn{
+  cursor: pointer;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.homeNoDisplay{
+  display: none;
+}
+
+/*--MOBILE--*/
+
+@media screen and (max-width: 800px){
+  .dashSettings{
+    display: none;
+  }
+
+  .dashProfile{
+    display: none;
+  }
+
+  .dashPost{
+    min-width: 90vw;
+  }
+
+  .headerLogo{
+    content: url("https://github.com/Souto751/project-imgs/blob/main/testbook/logoBlue.png?raw=true");
+  }
+
+  .profileContent{
+    flex-direction: column;
+  }
+
+  .profileName{
+    font-size: 25px;
+  }
+
+  .profileUserName{
+    font-size: 18px;
+  }
+
+  .profileFriends{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .postBtnText{
+    display: none;
+  }
+  
+  .postSingleStat{
+    font-size: 12px;
+  }
+
+  .postStats{
+    margin-left: 0;
+  }
+
+  .profileScreen{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profilePosts{
+    min-width: 100%;
+  }
+
+  .profileHeader{
+    padding-left: 5px;
+  }
+
+  .mobileHeaderText{
+    display: none;
+  }
+
+  .mobileHeaderBtn{
+    display: inline-block;
+  }
+
+  .profileBannerImg{
+    height: 100%;
+  }
+}
